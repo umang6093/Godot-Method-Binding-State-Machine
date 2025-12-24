@@ -44,7 +44,8 @@ func _idle_enter():
   animation_player.play("idle")
 
 
-func _idle_update(delta: float): 
+func _idle_update(delta: float):
+  # Exiting Idle
   if player.velocity.length() > 0:
     set_state(States.Walk)
 
@@ -54,7 +55,7 @@ func _walk_enter():
 
 
 func _walk_update(delta: float):
-  # Exit Walk State
+  # Exiting Walk
   if player.velocity.length() == 0:
     set_state(States.Idle)
 
